@@ -9,7 +9,7 @@ export const HomeContainer = styled.div`
 `;
 
 
-export const Content = styled.div`
+export const Content = styled.form`
   width: 100vw;
   display: flex;
   align-items: center;
