@@ -15,15 +15,15 @@ export default function Repositories() {
     } else {
       history.push('/')
     }
-  }, []);
+  }, [history]);
 
   return (
     <S.Container>
       <S.Title>Repositórios</S.Title>
       <S.List>
-        { repositories.map(repository => {
+        { repositories.map((repository, index) => {
           return (
-            <S.ListItem>Repositório: { repository }</S.ListItem>
+            <S.ListItem key={index}>Repositório: { repository }</S.ListItem>
           )
         }) }
       </S.List>
